@@ -60,12 +60,12 @@ show_menu() {
     echo -e "\e[1;34m                      SPILUX MENU                       \e[0m"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e ""
-    echo -e "\e[1;36m 1 \e[0m: Menu SSH"        "[\e[36m•9\e[0m] Panel Domain"
-    echo -e "\e[1;36m 2 \e[0m: Menu Vmess"      "\e[1;36m•10 \e[0m: Set Auto Reboot"
-    echo -e "\e[1;36m 3 \e[0m: Menu Trojan"     " [\e[36m•11 \e[0m] Restart All Service"
-    echo -e "\e[1;36m 4 \e[0m: Menu Shadowsocks"" [\e[36m•12 \e[0m] Check Bandwith"
-    echo -e "\e[1;36m 5 \e[0m: Speed test"      " [\e[36m•13 \e[0m] Install TCP BBR"
-    echo -e "\e[1;36m 6 \e[0m: Status Service"  " [\e[36m•14 \e[0m] DNS CHANGER"
+    echo -e "\e[1;36m 1 \e[0m: Menu Vmess"          "[\e[36m•9\e[0m] : Panel Domain"
+    echo -e "\e[1;36m 2 \e[0m: Menu Vmess"          "[\e[36m•10\e[0m] : Set Auto Reboot"
+    echo -e "\e[1;36m 3 \e[0m: Menu Trojan"         "[\e[36m•11\e[0m] : Restart All Service"
+    echo -e "\e[1;36m 4 \e[0m: Menu Shadowsocks"    "[\e[36m•12\e[0m] : Check Bandwith"
+    echo -e "\e[1;36m 5 \e[0m: Speed test"          "[\e[36m•13\e[0m] : Install TCP BBR"
+    echo -e "\e[1;36m 6 \e[0m: Status Service"      "[\e[36m•14\e[0m] : DNS CHANGER"
     echo -e "\e[1;36m 7 \e[0m: Clear RAM Cache"
     echo -e "\e[1;36m 8 \e[0m: Reboot VPS"
     echo -e "\e[1;36m x \e[0m: Exit Script"
@@ -101,8 +101,8 @@ show_menu() {
 
 # Initial setup
 domain=$(cat /etc/xray/domain)
-Exp2="NONE"
-Name="NETWORK TWEAKER"
+Exp2="PREMIUM"
+Name="SPILUX TECH"
 
 # Main loop to display menu continuously
 while true; do
