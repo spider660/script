@@ -24,7 +24,7 @@ clear
 echo -n > /tmp/other.txt
 data=( `cat /etc/xray/config.json | grep '^####' | cut -d ' ' -f 2`);
 echo "----------------------------------------";
-echo "---------=[ NT Vless User Login ]=---------";
+echo "---------=[ Spider Vless User Login ]=---------";
 echo "----------------------------------------";
 for akun in "${data[@]}"
 do

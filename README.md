@@ -1,4 +1,4 @@
-# SPILUX TECHVIP AIO
+# Spider TECHVIP AIO
 
 # Directly install without the need to register an IP VPS 
 

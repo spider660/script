@@ -1,7 +1,7 @@
 #!/bin/bash
-# SPILUX TECH
+# Spider TECH
 # SPILAU 
-# SPILUX 
+# Spider 
 # fn ki maa ka bhosda 
 GREEN='\033[0;32m'
 PURPLE='\033[0;35m'
@@ -204,7 +204,7 @@ Exp=$"NONE"
 Domen="$(cat /etc/xray/domain)"
 echo -e ""
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
-echo -e "\e[1;34m                NT SYSTEM INFORMATION               \e[0m"
+echo -e "\e[1;34m                Spider SYSTEM INFORMATION               \e[0m"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;32m Hostname  \e[0m: $HOSTNAME"
 echo -e "\e[1;32m OS Name   \e[0m: $Tipe"
@@ -212,13 +212,13 @@ echo -e "\e[1;32m Total RAM \e[0m: ${totalram} MB"
 echo -e "\e[1;32m Public IP \e[0m: $MYIP"
 echo -e "\e[1;32m Domain    \e[0m: $Domen"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
-echo -e "\e[1;34m             NT SUBSCRIPTION INFORMATION            \e[0m"
+echo -e "\e[1;34m             Spider SUBSCRIPTION INFORMATION            \e[0m"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;32m Client Name \e[0m: $Name"
 echo -e "\e[1;32m Exp Script  \e[0m: $Exp"
 echo -e "\e[1;32m Version     \e[0m: 1.0"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
-echo -e "\e[1;34m               NT SERVICE INFORMATION               \e[0m"
+echo -e "\e[1;34m               Spider SERVICE INFORMATION               \e[0m"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;32m SSH / TUN            \e[0m: $status_ssh"
 echo -e "\e[1;32m Dropbear             \e[0m: $status_beruangjatuh"

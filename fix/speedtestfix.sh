@@ -1,5 +1,5 @@
 #!/bin/bash
-# SPILUX TECH
+# Spider TECH
 BGreen='\e[1;32m'
 NC='\e[0m'
 clear

@@ -1,6 +1,6 @@
 #!/bin/bash
 # =========================================
-# Auther  : SPILUX TECH
+# Auther  : Spider TECH
 # =========================================
 RED='\033[0;31m'
 NC='\033[0m'
@@ -17,7 +17,7 @@ MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo "Checking VPS"
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "$y           NT DNS CHANGER$wh"
+echo -e "$y           Spider DNS CHANGER$wh"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 dnsfile="/root/dns"
 if test -f "$dnsfile"; then
@@ -29,7 +29,7 @@ echo -e ""
 echo -e " [\e[36m•1\e[0m] CHANGE DNS"
 echo -e " [\e[36m•2\e[0m] Reset DNS To Default"
 echo -e ""
-echo -e "\e[1;34m 0 BACK TO NT MENU \e[0m"
+echo -e "\e[1;34m 0 BACK TO Spider MENU \e[0m"
 echo -e ""
 read -p "Select From Options [ 1 - 2 ] or 0 Back To Menu :  " dns
 echo -e ""
@@ -55,7 +55,7 @@ echo "nameserver $dns1" >> /etc/resolv.conf
 echo "nameserver $dns1" >> /etc/resolvconf/resolv.conf.d/head
 systemctl restart resolvconf.service
 echo ""
-echo -e "\e[032;1mDNS $dns1 sucessfully insert in NT VPS\e[0m"
+echo -e "\e[032;1mDNS $dns1 sucessfully insert in Spider VPS\e[0m"
 echo ""
 cat /etc/resolvconf/resolv.conf.d/head
 sleep 1

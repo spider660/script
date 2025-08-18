@@ -4,12 +4,12 @@ echo "Checking VPS"
 clear
 echo ""
 echo ""
-echo -e "[ \033[32mInfo\033[0m ] Clear NT RAM Cache"
+echo -e "[ \033[32mInfo\033[0m ] Clear Spider RAM Cache"
 echo 1 > /proc/sys/vm/drop_caches
 sleep 3
-echo -e "[ \033[32mok\033[0m ] NT Cache cleared"
+echo -e "[ \033[32mok\033[0m ] Spider Cache cleared"
 echo ""
-echo "Back to NT menu in 2 sec "
+echo "Back to Spider menu in 2 sec "
 sleep 2
 menu
 

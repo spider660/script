@@ -10,26 +10,26 @@ function install () {
 IP=$(wget -qO- ifconfig.me/ip);
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m        • SPILUX INSTALL WEBMIN •         \E[0m"
+echo -e "\E[0;100;33m        • Spider INSTALL WEBMIN •         \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 0.5
 echo ""
-echo -e "\033[32m[Info]\033[0m Adding Repository of NT Webmin"
+echo -e "\033[32m[Info]\033[0m Adding Repository of Spider Webmin"
 sh -c 'echo "deb http://download.webmin.com/download/repository sarge contrib" > /etc/apt/sources.list.d/webmin.list'
 apt install gnupg gnupg1 gnupg2 -y > /dev/null 2>&1
 wget http://www.webmin.com/jcameron-key.asc > /dev/null 2>&1
 apt-key add jcameron-key.asc > /dev/null 2>&1
 sleep 0.5
-echo -e "\033[32m[Info]\033[0m Start Install NT Webmin"
+echo -e "\033[32m[Info]\033[0m Start Install Spider Webmin"
 sleep 0.5
 apt update > /dev/null 2>&1
 apt install webmin -y > /dev/null 2>&1
 sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
-echo -e "\033[32m[Info]\033[0m Restart NT Webmin"
+echo -e "\033[32m[Info]\033[0m Restart Spider Webmin"
 /etc/init.d/webmin restart > /dev/null 2>&1
 rm -f /root/jcameron-key.asc > /dev/null 2>&1
 sleep 0.5
-echo -e "\033[32m[Info]\033[0m NT Webmin Install Successfully !"
+echo -e "\033[32m[Info]\033[0m Spider Webmin Install Successfully !"
 echo ""
 echo " $IP:10000"
 echo ""
@@ -41,40 +41,40 @@ m-webmin
 function restart () {
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m        • NT RESTART WEBMIN •         \E[0m"
+echo -e "\E[0;100;33m        • Spider RESTART WEBMIN •         \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 0.5
 echo ""
-echo " Restarting NT Webmin"
+echo " Restarting Spider Webmin"
 service webmin restart > /dev/null 2>&1
 echo ""
 sleep 0.5
-echo -e "\033[32m[Info]\033[0m NT Webmin Start Successfully !"
+echo -e "\033[32m[Info]\033[0m Spider Webmin Start Successfully !"
 echo ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
-read -n 1 -s -r -p "Press any key to back on NT menu"
+read -n 1 -s -r -p "Press any key to back on Spider menu"
 m-webmin
 }
 function uninstall () {
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m       • UNINSTALL NT WEBMIN •        \E[0m"
+echo -e "\E[0;100;33m       • UNINSTALL Spider WEBMIN •        \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 0.5
 echo ""
-echo -e "\033[32m[Info]\033[0m Removing NT Webmin Repository"
+echo -e "\033[32m[Info]\033[0m Removing Spider Webmin Repository"
 rm -f /etc/apt/sources.list.d/webmin.list
 apt update > /dev/null 2>&1
 sleep 0.5
 echo -e "\033[32m[Info]\033[0m Start Uninstall Webmin"
 apt autoremove --purge webmin -y > /dev/null 2>&1
 sleep 0.5
-echo -e "\033[32m[Info]\033[0m NT Webmin Uninstall Successfully !"
+echo -e "\033[32m[Info]\033[0m Spider Webmin Uninstall Successfully !"
 echo ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
-read -n 1 -s -r -p "Press any key to back on NT menu"
+read -n 1 -s -r -p "Press any key to back on Spider menu"
 m-webmin
 }
 if [[ "$cek" = "perl" ]]; then
@@ -84,15 +84,15 @@ sts="${Error}"
 fi
 clear 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m          • NT WEBMIN MENU •          \E[0m"
+echo -e "\E[0;100;33m          • Spider WEBMIN MENU •          \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e " Status $sts"
-echo -e " [\e[36m•1\e[0m] Install NT Webmin"
-echo -e " [\e[36m•2\e[0m] Restart NT Webmin"
-echo -e " [\e[36m•3\e[0m] Uninstall NT Webmin"
+echo -e " [\e[36m•1\e[0m] Install Spider Webmin"
+echo -e " [\e[36m•2\e[0m] Restart Spider Webmin"
+echo -e " [\e[36m•3\e[0m] Uninstall Spider Webmin"
 echo -e ""
-echo -e " [\e[31m•0\e[0m] \e[31mBACK TO NT MENU\033[0m"
+echo -e " [\e[31m•0\e[0m] \e[31mBACK TO Spider MENU\033[0m"
 echo -e ""
 echo -e   "Press x or [ Ctrl+C ] • To-Exit"
 echo -e ""

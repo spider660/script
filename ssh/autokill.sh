@@ -13,7 +13,7 @@ sts="${Error}"
 fi
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[44;1;39m            NT AUTOKILL SSH          \E[0m"
+echo -e "\E[44;1;39m            Spider AUTOKILL SSH          \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "Status Autokill : $sts        "
 echo -e ""

@@ -1,9 +1,9 @@
 #!/bin/bash
 # Quick Setup | Script Setup Manager
 # Edition : Stable Edition 1.0
-# Auther  : SPILUX TECH
+# Auther  : Spider TECH
 # SPILAU 
-# SPILUX 
+# Spider 
 # fn ki maa ka bhosda 
 # (C) Copyright 2023
 # =========================================

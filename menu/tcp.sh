@@ -8,7 +8,7 @@ export PATH
 #	Version: 1.4.0
 #	Author: NETWORK 
 #	Channel: https://t.me/networktweakerop
-#       translation into english by SPILUX TECH
+#       translation into english by Spider TECH
 #=================================================
 
 sh_ver="1.4.0"

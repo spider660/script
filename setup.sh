@@ -143,14 +143,14 @@ clear
     
 #install ssh ovpn
 echo -e "\e[33m-----------------------------------\033[0m"
-echo -e "$BGreen      Install NT SSH Websocket           $NC"
+echo -e "$BGreen      Install Spider SSH Websocket           $NC"
 echo -e "\e[33m-----------------------------------\033[0m"
 sleep 0.5
 clear
 wget https://raw.githubusercontent.com/spider660/script/master/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #Instal Xray
 echo -e "\e[33m-----------------------------------\033[0m"
-echo -e "$BGreen          Install NT XRAY              $NC"
+echo -e "$BGreen          Install Spider XRAY              $NC"
 echo -e "\e[33m-----------------------------------\033[0m"
 sleep 0.5
 clear

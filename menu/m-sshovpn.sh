@@ -4,7 +4,7 @@ echo "Checking VPS"
 clear
 # CARI APA
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m       •SPILUX SSH MENU •         \E[0m"
+echo -e "\E[0;100;33m       •Spider SSH MENU •         \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e " [\e[36m•1\e[0m] Create SSH & WS Account "
@@ -21,7 +21,7 @@ echo -e " [\e[36m•11\e[0m] Change Banner SSH "
 echo -e " [\e[36m•12\e[0m] Set Lock User "
 echo -e " [\e[36m•13\e[0m] Set Unlock User "
 echo -e ""
-echo -e " [\e[31m•0\e[0m] \e[31mBACK TO NT MENU\033[0m"
+echo -e " [\e[31m•0\e[0m] \e[31mBACK TO Spider MENU\033[0m"
 echo -e ""
 echo -e   "Press x or [ Ctrl+C ] • To-Exit"
 echo ""
@@ -45,5 +45,5 @@ case $opt in
 13) clear ; user-unlock ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
-*) echo " SPILUX " ; sleep 1 ; m-sshovpn ;;
+*) echo " Spider " ; sleep 1 ; m-sshovpn ;;
 esac

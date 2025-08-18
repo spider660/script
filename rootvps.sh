@@ -1,4 +1,4 @@
-# by SPILUX TECH
+# by Spider TECH
 # ipinfo
 MYIP=$(wget -qO- ifconfig.me);
 # pewarna hidup

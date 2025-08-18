@@ -3,7 +3,7 @@ MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo "Checking VPS"
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m          • SPILUX SYSTEM MENU •          \E[0m"
+echo -e "\E[0;100;33m          • Spider SYSTEM MENU •          \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e 
@@ -28,5 +28,5 @@ case $opt in
 6) clear ; m-dns ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
-*) echo -e "" ; echo "SPILUX" ; sleep 1 ; m-system ;;
+*) echo -e "" ; echo "Spider" ; sleep 1 ; m-system ;;
 esac

@@ -16,13 +16,13 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/vmessgrpc.json")
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 		clear
 		echo ""
-		echo "You have no existing clients! by NT"
+		echo "You have no existing clients! by Spider"
 		exit 1
 	fi
 
 	clear
 	echo ""
-	echo "Select the existing client you want to renew by NT"
+	echo "Select the existing client you want to renew by Spider"
 	echo " Press CTRL+C to return"
 	echo -e "==============================="
 	grep -E "^### " "/etc/xray/vmessgrpc.json" | cut -d ' ' -f 2-3 | nl -s ') '
@@ -52,7 +52,7 @@ service cron restart
 clear
 echo ""
 echo "==============================="
-echo " NT XRAY Vmess/Vless gRPC Account Renewed by NT  "
+echo " Spider XRAY Vmess/Vless gRPC Account Renewed by Spider  "
 echo "==============================="
 echo "Username  : $user"
 echo "Expired   : $exp4"

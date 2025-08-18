@@ -1,5 +1,5 @@
 #!/bin/bash
-#script by SPILUX TECH
+#script by Spider TECH
 
 VERSIONNAME="Helium v"
 VERSIONNUMBER="3.0"
@@ -54,7 +54,7 @@ function initialCheck() {
 }
 
 function install() {
-	echo -e " Installing NT Helium.. "
+	echo -e " Installing Spider Helium.. "
 	[[ ! -e /etc/dnsmasq ]] && mkdir -p /etc/dnsmasq
 	[[ ! -e /etc/resolv.conf.bak ]] && cp /etc/resolv.conf /etc/resolv.conf.bak
 	if [[ $(lsof -i :53 | grep -w -c "systemd-r") -ge 1 ]]; then
@@ -83,7 +83,7 @@ function install() {
         clear
         header
         echo
-	echo -e " Installation completed by NT"
+	echo -e " Installation completed by Spider"
 	sleep 1
 	echo -e " Type \e[1;32mhelium\e[0m to start"
 	echo
@@ -100,7 +100,7 @@ function start() {
 		read -p $' Press Enter to continue...'
 		mainMenu
 	fi
-	echo -e -n " Starting NT Helium..."
+	echo -e -n " Starting Spider Helium..."
 	systemctl enable dnsmasq >/dev/null 2>&1
 	systemctl restart dnsmasq
 	echo "nameserver 127.0.0.1" >/etc/resolv.conf
@@ -144,7 +144,7 @@ function DNSOption() {
 	echo
         heliumStatus
         echo
-	echo -e " ${WHITE}Change NT DNS${NOCOLOR}"
+	echo -e " ${WHITE}Change Spider DNS${NOCOLOR}"
 	echo -e " [1] Google
  [2] Cloudflare
  [3] Cloudflare for Families
@@ -187,7 +187,7 @@ function DNSOption() {
 }
 
 function changeDNS() {
-	echo -e -n " Changing to ${PROVIDER} NT DNS..."
+	echo -e -n " Changing to ${PROVIDER} Spider DNS..."
 	OLD_DNS=$(grep -E -w "^server" /etc/dnsmasq.conf | cut -d '=' -f2)
 	# [[ ${NEW_DNS,,} == "c" ]] && mainMenu
 	# [[ -z ${NEW_DNS} ]] && changeDNS
@@ -275,7 +275,7 @@ function reinstall() {
 	echo
 	read -p " Do you want to reinstall Helium? [y/n]: " REINSTALL
 	[[ ${REINSTALL,,} != "y" ]] && mainMenu
-	echo -e -n " Reinstalling NT Helium..."
+	echo -e -n " Reinstalling Spider Helium..."
 	sleep 2
 	[[ ! -e /etc/dnsmasq ]] && mkdir -p /etc/dnsmasq
 	echo "nameserver 1.1.1.1" >/etc/resolv.conf
@@ -314,7 +314,7 @@ function uninstall() {
 	echo
 	read -p " Do you want to uninstall Helium? [y/n]: " UNINSTALL
 	[[ ${UNINSTALL,,} != "y" ]] && mainMenu
-	echo -e -n " Uninstalling NT Helium..."
+	echo -e -n " Uninstalling Spider Helium..."
 	systemctl stop dnsmasq >/dev/null 2>&1
 	systemctl disable dnsmasq >/dev/null 2>&1
 	apt remove -y dnsmasq >/dev/null 2>&1
@@ -596,7 +596,7 @@ function updateHelium() {
 		mainMenu
 	fi
 	read -p " Do you want to overwrite the existing providers? [y/n]: " OVERWRITE
-	echo -n -e " Updating NT Helium..."
+	echo -n -e " Updating Spider Helium..."
 	if [[ ${OVERWRITE,,} == "y" ]]; then
 		rm -rf /etc/dnsmasq/providers.txt
 		wget -q -O /etc/dnsmasq/providers.txt "https://raw.githubusercontent.com/abidarwish/helium/main/providers.txt"

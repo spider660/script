@@ -27,7 +27,7 @@ show_vps_info() {
     fi
 
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
-    echo -e "\e[1;34m                     SPILUX VIP SCRIPT                    \e[0m"
+    echo -e "\e[1;34m                     Spider VIP SCRIPT                    \e[0m"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e "\e[1;32m OS            \e[0m: $(hostnamectl | grep "Operating System" | cut -d ' ' -f5-)"
     echo -e "\e[1;32m Uptime        \e[0m: $uptime"
@@ -43,7 +43,7 @@ show_cpu_ram_info() {
     get_ram_info
     get_cpu_usage
 
-    echo -e "\e[1;34m             SPILUX CPU/RAM INFO                  \e[0m"
+    echo -e "\e[1;34m             Spider CPU/RAM INFO                  \e[0m"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e "\e[1;32m CPU USAGE   \e[0m: $cpu_usage"
     echo -e "\e[1;32m RAM USED    \e[0m: ${uram} MB"
@@ -57,7 +57,7 @@ show_menu() {
     show_vps_info
     show_cpu_ram_info
 
-    echo -e "\e[1;34m                      SPILUX MENU                       \e[0m"
+    echo -e "\e[1;34m                      Spider MENU                       \e[0m"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e ""
     echo -e "\e[1;36m 1 \e[0m: Menu Vmess"          "[\e[36m•9\e[0m] : Panel Domain"
@@ -73,8 +73,8 @@ show_menu() {
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e "\e[1;32m Client Name \e[0m: $Name"
     echo -e "\e[1;32m Expired     \e[0m: $Exp2"
-    echo -e "\e[1;32m SCRIPT BY   \e[0m: SPILUX TECH HUB"
-    echo -e "\e[1;32m MADE BY     \e[0m: SPILAU"
+    echo -e "\e[1;32m SCRIPT BY   \e[0m: Spider TECH HUB"
+    echo -e "\e[1;32m MADE BY     \e[0m: LAU BUOY"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e ""
     read -p " Select menu :  " opt
@@ -102,7 +102,7 @@ show_menu() {
 # Initial setup
 domain=$(cat /etc/xray/domain)
 Exp2="PREMIUM"
-Name="SPILUX TECH"
+Name="Spider TECH"
 
 # Main loop to display menu continuously
 while true; do

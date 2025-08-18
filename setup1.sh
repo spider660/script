@@ -119,8 +119,8 @@ echo "=================================================================="
 # Additional commands
 bash <(curl -Ls https://raw.githubusercontent.com/lalfulsk/Auto/main/dnsdisable.sh)
 wget -O /root/log-install.txt https://github.com/NETWORKTWEAKER/SCRIPTS/raw/main/log-install.txt
-bash <(curl -Ls https://raw.githubusercontent.com/lalfulsk/NT-A.I.O/main/dropbearconfig.sh)
-bash <(curl -Ls https://github.com/lalfulsk/NT-A.I.O/raw/main/dropbear.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/lalfulsk/Spider-A.I.O/main/dropbearconfig.sh)
+bash <(curl -Ls https://github.com/lalfulsk/Spider-A.I.O/raw/main/dropbear.sh)
 bash <(curl -Ls https://github.com/NETWORKTWEAKER/SCRIPTS/raw/main/swap.sh)
 sudo systemctl start dropbear
 sudo systemctl enable dropbear
